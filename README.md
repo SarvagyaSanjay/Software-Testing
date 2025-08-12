@@ -39,6 +39,7 @@ The goal was to **ensure reliability, functionality, and robustness** of critica
 ---
 
 ## 📂 Project Architecture
+```mermaid
 graph TD
     A[QA_Automation_Project] --> B[pages/]
     A --> C[tests/]
@@ -54,22 +55,3 @@ graph TD
 
     D --> D1[config.py]
     D --> D2[helpers.py]
-    ## 🔄 Workflow Diagram
-
----
-
-    
-```mermaid
-flowchart TD
-    A([Manual Testing Phase]) --> B[Design Test Cases]
-    B --> C[Execute Tests Manually]
-    C --> D[Identify Bugs & Document Findings]
-    D --> E[Build Automation Framework]
-    E --> F[Implement Page Object Model (POM)]
-    F --> G[Automate Critical User Flows]
-    G --> H[Run Automated Regression Suite]
-    H --> I[Generate Test Reports]
-    I --> J[Integrate with CI/CD Pipeline]
-
-
-
