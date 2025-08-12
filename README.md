@@ -39,15 +39,35 @@ The goal was to **ensure reliability, functionality, and robustness** of critica
 ---
 
 ## 📂 Project Architecture
+graph TD
+    A[QA_Automation_Project] --> B[pages/]
+    A --> C[tests/]
+    A --> D[utils/]
+    A --> E[requirements.txt]
 
+    B --> B1[login_page.py]
+    B --> B2[home_page.py]
+    B --> B3[cart_page.py]
 
-##flowchart TD
-    A[Manual Testing Phase] --> B[Write Test Cases]
+    C --> C1[test_login.py]
+    C --> C2[test_cart_workflow.py]
+
+    D --> D1[config.py]
+    D --> D2[helpers.py]
+    ## 🔄 Workflow Diagram
+
+    
+```mermaid
+flowchart TD
+    A([Manual Testing Phase]) --> B[Design Test Cases]
     B --> C[Execute Tests Manually]
-    C --> D[Identify Bugs & Improvements]
-    D --> E[Automation Framework Development]
-    E --> F[Implement Page Object Model]
-    F --> G[Automate Critical Test Cases]
-    G --> H[Run Regression Suite]
+    C --> D[Identify Bugs & Document Findings]
+    D --> E[Build Automation Framework]
+    E --> F[Implement Page Object Model (POM)]
+    F --> G[Automate Critical User Flows]
+    G --> H[Run Automated Regression Suite]
     H --> I[Generate Test Reports]
-    I --> J[Continuous Integration Setup]
+    I --> J[Integrate with CI/CD Pipeline]
+
+
+
