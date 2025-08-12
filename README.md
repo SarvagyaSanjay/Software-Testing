@@ -39,3 +39,15 @@ The goal was to **ensure reliability, functionality, and robustness** of critica
 ---
 
 ## 📂 Project Architecture
+
+
+##flowchart TD
+    A[Manual Testing Phase] --> B[Write Test Cases]
+    B --> C[Execute Tests Manually]
+    C --> D[Identify Bugs & Improvements]
+    D --> E[Automation Framework Development]
+    E --> F[Implement Page Object Model]
+    F --> G[Automate Critical Test Cases]
+    G --> H[Run Regression Suite]
+    H --> I[Generate Test Reports]
+    I --> J[Continuous Integration Setup]
